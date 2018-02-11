@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_off"
+    tools:context="eu.micer.openvpnsample.ui.activity.MainActivity">
+
+    <!-- https://github.com/kyleduo/SwitchButton -->
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switch_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:kswThumbHeight="@dimen/switch_thumb_height"
+        app:kswThumbMargin="8dp"
+        app:kswThumbRangeRatio="3"
+        app:kswThumbWidth="@dimen/switch_thumb_width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_vpn_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/unknown_state"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_vpn_is_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleX="1.1"
+        android:text="@string/vpn_connected"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/vpn_on_off_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/switch_connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vpn_state" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="security_art_height">400dp</dimen>
+    <dimen name="switch_thumb_height">80dp</dimen>
+    <dimen name="switch_thumb_width">80dp</dimen>
+</resources>
