@@ -1,3 +1,6 @@
+# OVPN config files
+*.ovpn
+
 # Built application files
 *.apk
 *.ap_
